@@ -1,16 +1,16 @@
 Name: Hide FileMgr Icon
 Version: 2.2.4-1
 Author: webOS Archive
-Description: Hide the FileMgr Icon from the Launcher while keeping it installed
+Description: Hide the FileMgr Icon -- withour removing the app.
 
 --- .orig/media/cryptofs/apps/usr/palm/applications/ca.canucksoftware.filemgr/appinfo.json
 +++ /media/cryptofs/apps/usr/palm/applications/ca.canucksoftware.filemgr/appinfo.json
-@@ -7,6 +7,8 @@
- 	"main": "index.html",
- 	"title": "FileMgr",
- 	"icon": "icon.png",
+@@ -125,6 +125,7 @@
+ 		},
+ 	],
+ 	"copyright": "&copy; Copyright 2009-2012, Jason Robitaille",
+-	"visible": true,
 +	"removable": true,
-+    "visible": false,
- 	"noWindow": true,
- 	"description": "FileMgr is a powerful homebrew webOS service. It freely provides custom file management API for developers and is used by many apps and patches, most notably Internalz.",
- 	"donate": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=NGS7CWEYWNT72",
++	"visible": false,
+ 	"uiRevision": 2
+ }
