@@ -41,14 +41,14 @@ See the `source/scripted-patch` folder for starter structure
 
 ## IpkPackager Notes
 
-**Folder**: click folder from *parent* of folder with *actual .patch file* in it
-**Destination on device**: */media/cryptofs/apps*`/usr/palm/applications/org.webosarchive.patches.patch-name`
-**Name:** Human readable
-**ID:** same as Folder name (org.webosarchive.etc)
-**Version:** 1.0.0
-**Developer:** Human name
-**Depends:** 
-	`org.webosinternals.patch`
-	`org.webosinternals.lsdiff`
-**Postinst script:** find `postinst` script from patch project
-**Prerm script:** find `prerm` script from patch project
+- **Folder**: click folder from *parent* of folder with *actual .patch file* in it
+- **Destination on device**: */media/cryptofs/apps*`/usr/palm/applications/org.webosarchive.patches.patch-name`
+- **Name:** Human readable
+- **ID:** same as Folder name (org.webosarchive.etc)
+- **Version:** 1.0.0
+- **Developer:** Human name
+- **Depends:** 
+	- `org.webosinternals.patch`
+	- `org.webosinternals.lsdiff`
+- **Postinst script:** find `postinst` script from patch project
+- **Prerm script:** find `prerm` script from patch project
