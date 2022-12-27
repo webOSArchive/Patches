@@ -1,0 +1,17 @@
+Name: Hide Amazon MP3
+Version: 2.2.4-1
+Author: webOS Archive
+Description: Hide Amazon's MP3 Store from the Launcher
+
+--- .orig/usr/palm/applications/com.palm.app.amazonstore/appinfo.json
++++ /usr/palm/applications/com.palm.app.amazonstore/appinfo.json
+@@ -6,6 +6,8 @@
+ 	"main": "index.html",
+ 	"id": "com.palm.app.amazonstore",
+ 	"icon": "icon.png",
+-	"splashicon": "icon-256x256.png"
++	"splashicon": "icon-256x256.png",
++	"removable": true,
++	"visible": false
+ }
+ 

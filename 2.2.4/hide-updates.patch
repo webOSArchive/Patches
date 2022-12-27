@@ -1,0 +1,16 @@
+Name: Hide Updates
+Version: 2.2.4-1
+Author: webOS Archive
+Description: Hide Updates icon from Launcher
+
+--- .orig/usr/palm/applications/com.palm.app.updates/appinfo.json
++++ /usr/palm/applications/com.palm.app.updates/appinfo.json
+@@ -4,6 +4,8 @@
+   	"main": "index.html",
+   	"id": "com.palm.app.updates",
+   	"icon": "icon.png",
++  	"removable": true,
++    "visible": false,
+ 	"splashicon": "icon-256x256.png",
+   	"miniicon": "images/small.png",
+   	"keywords": ["Settings", "Preferences"]

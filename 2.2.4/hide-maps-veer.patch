@@ -1,0 +1,17 @@
+Name: Hide Maps Veer
+Version: 2.2.4-1
+Author: webOS Archive
+Description: Hide Maps icon from Launcher on Veer
+
+--- .orig/media/cryptofs/apps/usr/palm/applications/com.palm.app.maps/appinfo.json
++++ /media/cryptofs/apps/usr/palm/applications/com.palm.app.maps/appinfo.json
+@@ -3,6 +3,8 @@
+   "title": "Maps",
+   "splashicon": "icon-256x256.png",
+   "icon": "icon.png",
++  "removable": true,
++  "visible": false,
+   "id": "com.palm.app.maps",
+   "uiRevision": 2,
+   "type": "web",
+\ No newline at end of file

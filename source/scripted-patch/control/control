@@ -1,0 +1,9 @@
+Package: org.webosarchive.patches.remove-ypmobile
+Version: 1.0.0
+Architecture: all
+Maintainer: webosarchive
+Description: Remove YPMobile
+Section: Mojo
+Priority: optional
+Depends: org.webosinternals.patch, org.webosinternals.lsdiff
+Source: { "Feed":"WebOS Patches", "Type":"Patch", "Category":"Mojo", "LastUpdated":"1319519830", "Title":"Remove YPMobile", "FullDescription":"Remove YellowPages Mobile from the Launcher", "Homepage":"http://www.webosarchive.org/patches/", "Icon":"http://www.webos-internals.org/images/f/f9/Icon_WebOSInternals_Patch.png", "License":"MIT License Open Source", "PostInstallFlags":"RestartLuna", "PostUpdateFlags":"RestartLuna", "PostRemoveFlags":"RestartLuna" }

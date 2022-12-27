@@ -1,0 +1,16 @@
+Name: Hide App Catalog
+Version: 2.2.4-1
+Author: webOS Archive
+Description: Hide HP App Catalog from Launcher
+
+--- .orig/media/cryptofs/apps/usr/palm/applications/com.palm.app.findapps/appinfo.json
++++ /media/cryptofs/apps/usr/palm/applications/com.palm.app.findapps/appinfo.json
+@@ -3,6 +3,8 @@
+ 	"type": "web",
+ 	"main": "index.html",
+ 	"id": "com.palm.app.findapps",
++	"removable": true,
++	"visible": false,
+ 	"icon": "icon.png",
+ 	"splashicon": "icon-256x256.png",
+ 	"splashBackground":"images/splash-screenshot-default.png",  

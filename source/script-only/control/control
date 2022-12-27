@@ -1,0 +1,9 @@
+Package: org.webosarchive.patches.touchpad-remove-deadapps
+Version: 1.0.0
+Architecture: all
+Maintainer: webosarchive
+Description: Remove Dead Apps on TouchPad
+Section: Launcher
+Priority: optional
+Depends: org.webosinternals.patch, org.webosinternals.lsdiff
+Source: { "Feed":"WebOS Patches", "Type":"Patch", "Category":"Launcher", "LastUpdated":"1319519830", "Title":"Remove Dead Apps (TouchPad)", "FullDescription":"Remove Dead Apps from the TouchPad Launcher: Catalog, Updates, Backup, Maps, VPN", "Homepage":"http://www.webosarchive.org/patches/", "Icon":"http://www.webos-internals.org/images/f/f9/Icon_WebOSInternals_Patch.png", "License":"MIT License Open Source", "PostInstallFlags":"RestartLuna", "PostUpdateFlags":"RestartLuna", "PostRemoveFlags":"RestartLuna" }

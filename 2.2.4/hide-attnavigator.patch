@@ -1,0 +1,16 @@
+Name: Hide ATT Navigator
+Version: 2.2.4-1
+Author: webOS Archive
+Description: Hide AT&T Navigator from the US Pre3 Launcher
+
+--- .orig/usr/palm/applications/com.telenav.app.attnavigation/appinfo.json
++++ /usr/palm/applications/com.telenav.app.attnavigation/appinfo.json
+@@ -14,6 +14,8 @@
+     "data-directory":"file:///var/telenav/",
+     "mockSystem":  false,
+     "mockGPS": false,
++    "removable": true,
++    "visible": false,
+     "mimeTypes": [{"scheme": "mapto"}, {"scheme": "maploc"},{"scheme": "telenav"}]
+ }
+ 

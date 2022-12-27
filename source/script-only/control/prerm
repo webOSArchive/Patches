@@ -1,0 +1,14 @@
+#!/bin/sh
+
+mv -f /var/home/root/cleanup-backup/usr-palm-applications/com.palm.app.backup/ /usr/palm/applications/
+mv -f /var/home/root/cleanup-backup/usr-palm-applications/com.palm.app.updates/ /usr/palm/applications/
+mv -f /var/home/root/cleanup-backup/usr-palm-applications/com.palm.app.vpn/ /usr/palm/applications/
+
+mv -f /var/home/root/cleanup-backup/media-cryptofs-apps/com.palm.app.enyo-findapps /media/cryptofs/apps/usr/palm/applications/
+mv -f /var/home/root/cleanup-backup/media-cryptofs-apps/com.palm.app.maps /media/cryptofs/apps/usr/palm/applications/
+mv -f /var/home/root/cleanup-backup/media-cryptofs-apps/com.palm.app.updates /media/cryptofs/apps/usr/palm/applications/
+
+rm -rf /var/home/root/cleanup-backup/usr-palm-applications
+rm -rf /var/home/root/cleanup-backup/media-cryptofs-apps
+
+exit 0

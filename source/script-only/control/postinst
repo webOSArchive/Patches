@@ -1,0 +1,16 @@
+#!/bin/sh
+
+mkdir -p /var/home/root/cleanup-backup/usr-palm-applications
+mkdir -p /var/home/root/cleanup-backup/media-cryptofs-apps
+
+mv -f /usr/palm/applications/com.palm.app.backup/ /var/home/root/cleanup-backup/usr-palm-applications/
+mv -f /usr/palm/applications/com.palm.app.updates/ /var/home/root/cleanup-backup/usr-palm-applications/
+mv -f /usr/palm/applications/com.palm.app.vpn/ /var/home/root/cleanup-backup/usr-palm-applications/
+
+mv -f /media/cryptofs/apps/usr/palm/applications/com.palm.app.enyo-findapps /var/home/root/cleanup-backup/media-cryptofs-apps/
+mv -f /media/cryptofs/apps/usr/palm/applications/com.palm.app.maps /var/home/root/cleanup-backup/media-cryptofs-apps/
+mv -f /media/cryptofs/apps/usr/palm/applications/com.palm.app.updates /var/home/root/cleanup-backup/media-cryptofs-apps/
+
+/usr/bin/killall -HUP LunaSysMgr 2>&1
+
+exit 0

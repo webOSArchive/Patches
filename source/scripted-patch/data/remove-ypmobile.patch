@@ -1,0 +1,16 @@
+Name: Remove YPMobile
+Version: 2.2.4-1
+Author: webOSArchive
+Description: Remove the Yellow Pages Mobile app from the Launcher
+
+--- .orig/usr/palm/applications/com.yellowpages.ypmobile.preload/appinfo.json
++++ /usr/palm/applications/com.yellowpages.ypmobile.preload/appinfo.json
+@@ -8,6 +8,8 @@
+     "icon": "icon.png",
+     "splashicon": "splashicon.png",
+     "build": "256",
++    "removable": true,
++    "visible": false,
+     "universalSearch": {
+         "search" : {
+             "displayName" : "YPMobile",

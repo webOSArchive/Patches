@@ -1,0 +1,16 @@
+Name: Hide YPMobile
+Version: 2.2.4-1
+Author: webOS Archive
+Description: Hide YellowPages Mobile from the US Pre3 Launcher
+
+--- .orig/usr/palm/applications/com.yellowpages.ypmobile.preload/appinfo.json
++++ /usr/palm/applications/com.yellowpages.ypmobile.preload/appinfo.json
+@@ -8,6 +8,8 @@
+     "icon": "icon.png",
+     "splashicon": "splashicon.png",
+     "build": "256",
++    "removable": true,
++    "visible": false,
+     "universalSearch": {
+         "search" : {
+             "displayName" : "YPMobile",

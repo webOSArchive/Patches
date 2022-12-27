@@ -1,0 +1,16 @@
+Name: Hide XServer Icon
+Version: 2.2.4-1
+Author: webOS Archive
+Description: Hide XServer Icon from Launcher -- but keep XServer installed
+
+--- .orig/media/cryptofs/apps/usr/palm/applications/org.webosinternals.xserver/appinfo.json
++++ /media/cryptofs/apps/usr/palm/applications/org.webosinternals.xserver/appinfo.json
+@@ -6,6 +6,8 @@
+ "type": "web",
+ "main": "index.html",
+ "icon": "icon.png",
++"removable": true,
++"visible": false,
+ "message": "XServer is used to display X Windows applications on webOS.<br> Due to webOS security constraints, this application cannot run directly.<br> You must use <b>Xecutah</b> to run the XServer and other X Window System applications on webOS.",
+ "changeLog": [ { "version" : "0.9.7",  "log" : [ "Add support for right-click as well as show/hide keyboard.  Code primarily from elpollodiablo!" ] }, { "version" : "0.9.6",  "log" : [ "Fix Orientation and Tab char support in 3.0.4. Also, add vkb support for control (dismiss) and escape (euro)." ] }, { "version" : "0.9.4",  "log" : [ "Use Meta_L instead of Alt_L for compat." ] }, { "version" : "0.9.3",  "log" : [ "Added support for starting multiple applications in separate cards." ] }, { "version" : "0.9.2",  "log" : [ "Move to an event based start." ] }, { "version" : "0.9.1",  "log" : [ "Added multi-card support." ] }, { "version" : "0.9.0",  "log" : [ "First public feed release." ] }, { "version" : "0.8.4",  "log" : [ "Works again on Pre." ] }, { "version" : "0.8.3",  "log" : [ "Fix rendering regression (see hex-a-hop) introduced in previous release." ] }, { "version" : "0.8.2",  "log" : [ "Use 32bpp instead of 24bpp, fixes crashes with lxterminal and others." ] }, { "version" : "0.8.1",  "log" : [ "Add basic RANDR support, fix some keyboard issues." ] }, { "version" : "0.7.6",  "log" : [ "Add support for bluetooth Control, Alt, and arrow keys. (Alt is Symbol on HP BT keyboard)." ] }, { "version" : "0.7.5",  "log" : [ "Fix timing issue that sometimes results in keymappings not being set." ] }, { "version" : "0.7.4",  "log" : [ "Add support to change virtual keyboard type (size, or none) with tweaks." ] }, { "version" : "0.7.3",  "log" : [ "Greatly improved support for touchpad virtual keyboard" ] }, { "version" : "0.7.2",  "log" : [ "New upstart-based execution architecture to support legacy webOS versions" ] }, { "version" : "0.6.8",  "log" : [ "Enable sticky modifiers on phone devices" ] }, { "version" : "0.6.7",  "log" : [ "Force phones to portrait mode" ] }, { "version" : "0.6.6",  "log" : [ "Initial testing release" ] } ],
+ "uiRevision": "2",

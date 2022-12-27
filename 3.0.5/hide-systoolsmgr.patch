@@ -1,0 +1,16 @@
+Name: Hide SysToolsMgr Icon
+Version: 2.2.4-1
+Author: webOS Archive
+Description: Hide the SysToolsMgr Icon from the Launcher while keeping it installed
+
+--- .orig/media/cryptofs/apps/usr/palm/applications/ca.canucksoftware.systoolsmgr/appinfo.json
++++ /media/cryptofs/apps/usr/palm/applications/ca.canucksoftware.systoolsmgr/appinfo.json
+@@ -7,6 +7,8 @@
+ 	"main": "index.html",
+ 	"title": "SysToolsMgr",
+ 	"icon": "icon.png",
++	"removable": true,
++    "visible": false,
+ 	"description": "This is power homebrew service for webOS. It contains many useful system functions, including LED flash control, and is publicly available for any developer to use.",
+ 	"donate": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=9500502",
+ 	"changelog": [
