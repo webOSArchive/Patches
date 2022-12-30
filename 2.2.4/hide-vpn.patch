@@ -1,0 +1,16 @@
+Name: Hide VPN
+Version: 2.2.4-1
+Author: webOS Archive
+Description: Hide VPN icon from Launcher
+
+--- .orig/usr/palm/applications/com.palm.app.vpn/appinfo.json
++++ /usr/palm/applications/com.palm.app.vpn/appinfo.json
+@@ -7,6 +7,8 @@
+ 	"noWindow": "true",
+ 	"title": "VPN",
+ 	"icon": "icon.png",
++	"removable": true,
++	"visible": false,
+ 	"splashicon": "icon-256x256.png",
+ 	"keywords": ["Settings", "Preferences", "Wireless", "VPN", "Networking"]
+ }
