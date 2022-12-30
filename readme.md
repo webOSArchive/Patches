@@ -52,3 +52,9 @@ See the `source/scripted-patch` folder for starter structure
 	- `org.webosinternals.lsdiff`
 - **Postinst script:** find `postinst` script from patch project
 - **Prerm script:** find `prerm` script from patch project
+
+## Install Process Notes
+
+- `control` files deployed to: `/media/cryptofs/apps/usr/lib/ipkg/info`
+- `data` files deployed to: `/media/cryptofs/apps/usr/palm/applications`
+- `postinst` file is executed, errors shown in WOSQI/Preware come from this script
