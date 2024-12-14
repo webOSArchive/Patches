@@ -1,3 +1,11 @@
+# Installing Patches
+
+- These patches are meant to be installed from WebOS Quick Install -- not Preware
+- You will need the patching pre-requisites from Preware first:
+  - AUSMT Scripts
+  - GNU Patch
+  - Lsdiff
+
 # Creating Patches
 
 This project includes tools and notes for generating patches for legacy (mobile) webOS
